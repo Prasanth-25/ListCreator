@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Register</title>
+<style>
+body{
+background:#323232;
+}
+.wrap{
+	width:350px;
+        margin:auto;
+	background:#00adee;
+	margin-top:50px;
+}
+form{
+	padding:10px;
+	font-family:arial;
+	border:1px dotted white;
+	margin:10px;
+}
+h2{
+	text-align:center;
+	background:orange;
+	color:white;
+	padding:10px;
+	border-radius:10px;
+}
+input{
+	padding:10px;
+	margin:5px;
+	border-radius:5px;
+	border:none;
+}
+input[type=text], input[type=email],input[type=date], input[type=text], input[type=password]{
+	width:90%;
+}
+input[type=submit]{
+	width:95%;
+	background:orange;
+	cursor:pointer;
+	font-size:18px;
+	font-weight:bold;
+	color:white;
+}
+input[type=submit]:hover{
+	background:yellow;
+}
+select{
+	padding:10px;
+	width:32%;
+ 	border-radius:5px;
+}
+</style>
+</head>
+<body>
+	<div class ="wrap">
+		<form action="UserRegister" method="post">
+			<h2> Signup Free</h2>
+				<input type="text" name="yourname" placeholder="your Name" required>
+				<input type="email" name="email" placeholder="your Email" required>
+				<input type="text" name="number" placeholder="your Mobile Number" required>
+				<input type="password" name="password" placeholder="your Password" required>
+				<input type="password" name="confirmpassword" placeholder="Confirm Password" required>
+				<input type="date" name="dob" placeholder="Date Of Birth" required>
+			<br>
+			<input type ="submit" value ="Submit Now">
+		</form>
+	</div>
+</body>
+</html>
